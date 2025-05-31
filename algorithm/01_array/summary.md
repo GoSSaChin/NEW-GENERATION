@@ -1,4 +1,29 @@
 # 배열
 
--
--
+### 배열이란
+
+- 같은 타입의 데이터를 순서대로 저장하는 자료구조
+- 각 요소는 `index`를 통해 빠르게 접근 가능
+
+### 자바스크립트 배열의 특징
+
+- 자료형이 섞여 있어도 동작 (`[1, 'a', true]`)
+- 크기 제한이 없음
+- 다양한 내장 메서드 제공
+  - `push()`, `pop()`, `shift()`, `unshift()`, `splice()`, `map()`, `filter()`, `reduce()` 등
+
+### 사용 예시
+
+```js
+const city = ["Seoul", "Daegu", "Gumi"];
+console.log(city[1]); // Daegu
+
+city.push("Ulsan"); // ["Seoul", "Daegu", "Gumi", "Ulsan"]
+city.slice(1, 1); // ["Seoul", "Gumi", "Ulsan"]
+```
+
+### 사용하는 시점
+
+- 순서가 있는 데이터를 다룰 때
+- 빠른 인덱스 접근이 필요할 때
+- 빈번한 삽입/삭제가 없을 때 (삽입/삭제는 느린 편)
